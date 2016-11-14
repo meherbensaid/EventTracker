@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+<group
+    android:id="@+id/menu_top"
+    android:checkableBehavior="single"
+    >
+    <item android:title="@string/rech_av"
+        android:icon="@drawable/ic_search"
+        android:id="@+id/rech_item"/>
+
+    <item android:title="@string/title_activity_preferences"
+        android:icon="@drawable/preferences"
+        android:id="@+id/preferences"/>
+
+    <item android:title="@string/favorites"
+        android:icon="@drawable/favorite_star"
+        android:id="@+id/favorites"/>
+</group>
+</menu>

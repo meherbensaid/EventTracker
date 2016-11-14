@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+   <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       android:background="#aacfd8dc"
+       android:padding="30dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="vertical"
+        android:layout_weight="1"
+        />
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="#aacfd8dc"
+        android:padding="30dp"/>
+</LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/cultureButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|bottom"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/culture_icon" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/sportButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/football_icon" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/allButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/mixed_icon" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/ascButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|top"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ascending" />
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/descButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|top"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/descending" />
+
+</android.support.design.widget.CoordinatorLayout>

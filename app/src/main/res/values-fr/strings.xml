@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+    <string name="app_name">EventsTracker</string>
+    <string name="action_search">Chercher</string>
+    <string name="openDrawer">OpenDrawer</string>
+    <string name="closeDrawer">CloseDrawer</string>
+    <string name="home">Accueil</string>
+    <string name="event">Evénément</string>
+    <string name="mail">Mail</string>
+    <string name="country_prompt">Choisir un pays</string>
+    <string name="favorites">Favoris</string>
+    <string name="locating_device">Localisation de votre appareil…</string>
+    <string name="details">Détails</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="title_activity_result">ResultActivity</string>
+    <string name="select_country">Emplacement:</string>
+    <string name="du">Du</string>
+    <string name="au">Au</string>
+    <string name="rech_av">Recherche Avancée</string>
+    <string name="tri_date_croi">Tri croissant par Date</string>
+    <string name="tri_date_decroi">Tri décroissant par Date</string>
+    <string name="track_events">Ne ratez aucun de vos événements favoris</string>
+    <string name="title_activity_preferences">Préférences</string>
+    <string name="save">Sauvegarder</string>
+    <string name="title_favoris">Favoris</string>
+    <string name="action_delete">Supprimer</string>
+    <string name="action_detail">Details</string>
+    <string name="choix_options">Veuillez choisir les options de recherche : </string>
+    <string name="pref_options">Veuillez définir vos préférences :</string>
+    <string name="choix_lieu">Choix du lieu:</string>
+    <string name="geolocalisation">Géolocalisation</string>
+    <string name="choix_pays">Choix pays</string>
+    <string name="maj_position">MAJ Position</string>
+    <string name="saisir_position">Saisir votre emplacement</string>
+    <string name="types_events">Type des événements</string>
+    <string name="sportifs">Sportifs</string>
+    <string name="culturels">Culturels</string>
+    <string name="cat_event_sport">Catégorie des événements sportifs</string>
+    <string name="football">Football</string>
+    <string name="handball">Handball</string>
+    <string name="basketball">Basketball</string>
+    <string name="tennis">Tennis</string>
+    <string name="cat_event_culture">Catégorie des événements culturels</string>
+    <string name="theatre">Théatre</string>
+    <string name="musique">Musique</string>
+    <string name="cinema">Cinéma</string>
+    <string name="expo_plastique">Exposition et Arts plastiques</string>
+    <string name="littérature">Littérature</string>
+    <string name="chercher">Chercher</string>
+    <string name="date_début">Date de début:</string>
+    <string name="date_fin">Date de fin:</string>
+    <string name="heure_début">Heure de début:</string>
+    <string name="heure_fin">Heure de  fin:</string>
+    <string name="description">Description:</string>
+    <string name="ajouter_favoris">Ajouter aux favoris</string>
+    <string name="space">Espace</string>
+    <string name="title">Titre</string>
+    <string name="aller_article">Aller à l\'article</string>
+    <string name="gps_not_provided">Le GPS est désactivé</string>
+    <string name="ajouter_aux_favoris">Voulez vous ajouter cet événement aux favoris ?</string>
+    <string name="oui">Oui</string>
+    <string name="non">Non</string>
+    <string name="connectez_internet">Veuillez vous connecter à Internet !</string>
+    <string name="retirer_favoris">L\'événement a été retiré de la liste des favoris</string>
+    <string name="de">De</string>
+    <string name="a">à</string>
+    <string name="events_sport">événements sportifs</string>
+    <string name="events_culturel">événements culturels</string>
+    <string name="all_events">Tous les événements</string>
+    <string name="no_sportive">Pas d\'événements sportifs</string>
+    <string name="no_cultural">Pas d\'événements culturels</string>
+    <string name="today_event">Aujourd\'hui vous avez l\'événement %1$s à %2$s </string>
+    <string name="tomorrow_event">Demain vous aurez l\'événement %1$s à %2$s</string>
+    <string name="plz_update_location">Veuillez mettre à jour votre position !</string>
+    <string name="last_db_loaded">"Pas de connexion Internet ! les résultats de la dernière recherche seront affichés .</string>
+    <string name="loading">Chargement ...</string>
+    <string name="results">Résultats</string>
+    <string name="location">Emplacement</string>
+    <string name="verify_connection">Vérification de la connexion...</string>
+    <string name="added_to_favourite">L\'événement a été ajouté aux favoris !</string>
+    <string name="already_favourite">L\'événement existe déja dans vos favoris !</string>
+    <string name="date_error">La date de fin doit être postérieure à la date de début ! </string>
+    <string name="appropriate_date">Veuillez saisir une date dans l\'intervalle spécifié !</string>
+    <string name="set_notification">Gérer les notification</string>
+    <string name="choose_date">Choisir une date entre %1$s  et %2$s pour la notification"</string>
+    <string name="undefined">Aucun</string>
+    <string name="chosenDate">Date choisie</string>
+    <string name="dialogcannottitle">Ajout impossible</string>
+    <string name="cannnotaddtofav">Cet événement est déja passé. Il ne peut donc pas être ajouté aux favoris</string>
+
+</resources>

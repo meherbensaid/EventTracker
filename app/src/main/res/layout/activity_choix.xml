@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar">
+    </include>
+    <TableLayout
+        android:weightSum="1"
+        android:layout_weight="0.9"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="2dp"
+    >
+    <TableRow android:layout_weight="0.05">
+        <TextView
+            android:id="@+id/first_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choix_options"
+            />
+    </TableRow>
+
+        <TableRow android:layout_weight="0.15">
+            <RadioGroup
+                android:id="@+id/group_pays"
+                android:orientation="vertical"
+                android:layout_weight="0.2">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/choix_lieu"
+                android:layout_weight="0.4"
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:layout_weight="0.3"
+                android:id="@+id/geo"
+                android:text="@string/geolocalisation"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pays"
+                android:layout_weight="0.3"
+                android:text="@string/choix_pays"/>
+            </RadioGroup>
+    </TableRow>
+
+
+        <TableRow android:layout_weight="0.1"
+            android:id="@+id/update_location_row">
+
+            <TextView  android:id="@+id/location_text"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:gravity="center_vertical"
+                android:layout_weight="0.4"
+                android:text="@string/select_country"/>
+
+            <ImageButton
+                android:id="@+id/update_location"
+                android:background="@null"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:src="@drawable/ic_sync_black_24dp"
+                />
+
+        </TableRow>
+        <TableRow android:layout_weight="0.1"
+            android:id="@+id/location_row">
+
+            <TextView  android:id="@+id/current_location"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:layout_weight="0.4"
+                android:text="@string/select_country"/>
+
+
+
+        </TableRow>
+    <TableRow android:layout_weight="0.1"
+        android:id="@+id/enter_location_row"
+        android:visibility="gone">
+
+        <TextView  android:id="@+id/enter_location"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:text="@string/select_country"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/location"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="0.7"
+        android:hint="@string/saisir_position"
+        android:inputType="text"
+
+        />
+
+    </TableRow>
+        <TableRow android:layout_weight="0.1"
+            android:id="@+id/date_du_row"
+            >
+
+            <TextView  android:id="@+id/du"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:text="@string/du"/>
+
+           <EditText  android:layout_height="wrap_content"
+               android:id="@+id/date_debut"
+               android:inputType="date"
+               android:layout_width="0dp"
+               android:layout_weight="0.8"
+               android:hint="@string/date_début"
+               />
+
+        </TableRow>
+
+        <TableRow android:layout_weight="0.1"
+            android:id="@+id/date_au_row"
+            >
+
+
+            <TextView  android:id="@+id/au"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:text="@string/au"/>
+
+            <EditText  android:layout_height="wrap_content"
+                android:id="@+id/date_fin"
+                android:inputType="date"
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:hint="@string/date_fin"
+                />
+        </TableRow>
+
+        <TableRow android:layout_weight="0.1">
+
+        <RadioGroup android:orientation="horizontal"
+            android:layout_weight="0.2">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/types_events"
+                android:layout_weight="0.4"
+                />
+
+            <CheckBox
+                android:id="@+id/sportifs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="@string/sportifs"/>
+
+            <CheckBox
+                android:id="@+id/culturels"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="@string/culturels"/>
+        </RadioGroup>
+
+    </TableRow>
+    <TableRow android:layout_weight="0.2">
+
+
+        <RadioGroup android:orientation="vertical"
+            android:layout_weight="0.2">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/cat_event_sport"
+                />
+            <CheckBox
+                android:id="@+id/football"
+                android:enabled="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/football"/>
+            <CheckBox
+                android:id="@+id/handball"
+                android:layout_width="wrap_content"
+                android:enabled="false"
+                android:layout_height="wrap_content"
+                android:text="@string/handball"/>
+            <CheckBox
+                android:id="@+id/basketball"
+                android:layout_width="wrap_content"
+                android:enabled="false"
+                android:layout_height="wrap_content"
+                android:text="@string/basketball"/>
+            <CheckBox
+                android:id="@+id/tennis"
+                android:enabled="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tennis"/>
+        </RadioGroup>
+    </TableRow>
+    <TableRow android:layout_weight="0.2">
+        <RadioGroup android:orientation="vertical"
+            android:layout_weight="0.2">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="@string/cat_event_culture"
+                />
+            <CheckBox
+                android:id="@+id/theatre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="@string/theatre"/>
+            <CheckBox
+                android:id="@+id/musique"
+                android:enabled="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/musique"/>
+            <CheckBox
+                android:id="@+id/cinema"
+                android:enabled="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cinema"/>
+            <CheckBox
+                android:id="@+id/plastique"
+                android:enabled="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/expo_plastique"/>
+            <CheckBox
+                android:id="@+id/litterature"
+                android:enabled="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/littérature"/>
+
+        </RadioGroup>
+    </TableRow>
+        <TableRow android:layout_weight="0.1">
+            <TextView />
+        </TableRow>
+    <TableRow android:layout_weight="0.1">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_weight="0.25"/>
+
+        <Button
+            android:id="@+id/chercher_button"
+            android:layout_width="0dp"
+            android:background="@drawable/mybutton"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:text="@string/chercher"
+            android:layout_weight="0.5"
+            />
+        <TextView android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:visibility="invisible"
+            />
+    </TableRow>
+        <TableRow android:layout_weight="0.1">
+            <TextView />
+        </TableRow>
+</TableLayout>
+    </LinearLayout>
+</ScrollView>
